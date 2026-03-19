@@ -2,9 +2,163 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIKA | Rendimiento Puro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body class="antialiased selection:bg-blue-500 selection:text-white">
 
+<nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="brand-font text-3xl font-bold tracking-widest text-white">ZIKA</div>
+        <a href="#comprar" class="bg-white text-black px-6 py-2 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-blue-50 transition-colors">
+            Obtener Zika
+        </a>
+    </div>
+</nav>
+
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <!-- ESPACIO PARA IMAGEN: Fondo del Hero (Whisk_f056...jpg) -->
+        <!-- Reemplaza el div de abajo por tu imagen cuando estés listo -->
+        <div class="w-full h-full bg-[#0a1526] flex items-center justify-center text-gray-700 opacity-50">
+            [Fondo: Whisk_f056115520e5938ad5a4ef1758b408f8dr.jpg]
+        </div>
+        <!-- <img src="Whisk_f056115520e5938ad5a4ef1758b408f8dr.jpg" alt="Zika en pista de atletismo" class="w-full h-full object-cover opacity-40"> -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-[#030712]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center w-full">
+        <div class="reveal active pt-10 lg:pt-0">
+            <h1 class="text-5xl md:text-7xl font-bold uppercase leading-tight mb-6">
+                Libera tu <br><span class="gradient-text">Potencial</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-xl">
+                La hidratación definitiva para el cuerpo humano. Sal marina real y electrolitos limpios. Cero basura oculta.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#formula" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-center uppercase tracking-wider transition-colors">
+                    Descubre la fórmula
+                </a>
+            </div>
+        </div>
+        <div class="relative reveal active hidden lg:flex justify-center h-[600px]">
+            <!-- ESPACIO PARA IMAGEN: Botella principal (Zika.png) -->
+            <!-- Cambia este div por la etiqueta img comentada abajo -->
+            <div class="placeholder-box w-[60%] h-full">
+                <span>ESPACIO PARA IMAGEN<br><br>Inserta aquí:<br><b>Zika.png</b><br>(La botella sin fondo)</span>
+            </div>
+            <!-- <img src="Zika.png" alt="Botella deportiva" class="w-[60%] object-contain drop-shadow-2xl transform hover:-translate-y-4 transition-transform duration-500"> -->
+        </div>
+    </div>
+</header>
+
+<section id="problema" class="py-24 bg-[#030712]">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="reveal h-[500px]">
+                <!-- ESPACIO PARA IMAGEN: Gimnasio (Whisk_92b9...jpg) -->
+                <div class="placeholder-box w-full h-full">
+                    <span>ESPACIO PARA IMAGEN<br><br>Inserta aquí:<br><b>Whisk_92b92f2de0749b9b349475777022f04cdr.jpg</b><br>(Atletas en el gimnasio)</span>
+                </div>
+                <!-- <img src="Whisk_92b92f2de0749b9b349475777022f04cdr.jpg" alt="Atletas en el gimnasio" class="w-full h-full object-cover rounded-2xl"> -->
+            </div>
+            <div class="reveal">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Deja de beber jarabe.</h2>
+                <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                    Las bebidas deportivas tradicionales sacrifican tu salud metabólica por un falso pico de energía. Te venden azúcares refinados y edulcorantes artificiales que destrozan tu sistema.
+                </p>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Esos ingredientes provocan picos de insulina que terminan en un colapso energético. Estás intentando rendir más, pero le estás dando a tu cuerpo un problema adicional que procesar.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="formula" class="py-24 bg-[#0a1120]">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1 reveal">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Biología. No química.</h2>
+                <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                    Zika está formulada estrictamente con sal marina y los electrolitos que pierdes al sudar. Eliminamos todo lo que tu cuerpo no necesita para funcionar al límite.
+                </p>
+                <ul class="space-y-4 text-gray-300 text-lg">
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mr-4"></div>
+                        Sin azúcar añadido.
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mr-4"></div>
+                        Sin edulcorantes que alteren la insulina.
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mr-4"></div>
+                        Hidratación celular profunda.
+                    </li>
+                </ul>
+            </div>
+            <div class="order-1 lg:order-2 reveal h-[500px]">
+                <!-- ESPACIO PARA IMAGEN: Naturaleza (Whisk_119b...jpg) -->
+                <div class="placeholder-box w-full h-full">
+                    <span>ESPACIO PARA IMAGEN<br><br>Inserta aquí:<br><b>Whisk_119baedb43e5412bb6d4a0309e4e4c15dr.jpg</b><br>(Botella en la naturaleza)</span>
+                </div>
+                <!-- <img src="Whisk_119baedb43e5412bb6d4a0309e4e4c15dr.jpg" alt="Agua pura" class="w-full h-full object-cover rounded-2xl"> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-32 bg-[#030712] relative overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-30">
+        <!-- ESPACIO PARA IMAGEN: Fondo montañas -->
+        <div class="w-full h-full bg-[#050f24] flex items-center justify-center text-gray-700">
+            [Fondo opcional oscuro]
+        </div>
+        <!-- <img src="fondo-montanas.jpg" alt="Fondo montañas" class="w-full h-full object-cover"> -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-[#030712]"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-6 relative z-10 text-center reveal">
+        <h2 class="text-4xl md:text-6xl font-bold mb-8 uppercase">Energía para el Altiplano</h2>
+        <p class="text-xl text-gray-300 mb-12">
+            Probada en las condiciones más extremas. Zika es la bebida oficial de los atletas que no aceptan excusas ni ingredientes mediocres.
+        </p>
+        <div class="w-full max-w-md mx-auto h-[450px]">
+            <!-- ESPACIO PARA IMAGEN: Bolivia (Whisk_1f33...jpg) -->
+            <div class="placeholder-box w-full h-full">
+                <span>ESPACIO PARA IMAGEN<br><br>Inserta aquí:<br><b>Whisk_1f332e19aa926e6bfd14a59cf481e7f8dr.jpg</b><br>(Zika Edición Bolivia)</span>
+            </div>
+            <!-- <img src="Whisk_1f332e19aa926e6bfd14a59cf481e7f8dr.jpg" alt="Zika Edición Bolivia" class="w-full h-full object-cover rounded-2xl shadow-2xl border border-gray-700"> -->
+        </div>
+    </div>
+</section>
+
+<section id="comprar" class="py-32 bg-[#0a1120] border-t border-gray-800">
+    <div class="max-w-3xl mx-auto px-6 text-center reveal">
+        <h2 class="text-4xl font-bold mb-6">Eleva tu estándar.</h2>
+        <p class="text-xl text-gray-400 mb-10">
+            Tu cuerpo es tu máquina de rendimiento. Deja de alimentarlo con basura comercial.
+        </p>
+        <button class="bg-white text-black hover:bg-gray-200 px-10 py-5 rounded-full font-bold text-lg uppercase tracking-widest transition-transform transform hover:scale-105">
+            Comprar ZIKA Ahora
+        </button>
+        <p class="mt-6 text-sm text-gray-500">
+            Envío disponible a todo el país.
+        </p>
+    </div>
+</section>
+
+<footer class="bg-[#030712] py-10 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+        <div class="brand-font text-2xl font-bold tracking-widest text-gray-500 mb-4 md:mb-0">ZIKA</div>
+        <div class="text-gray-600 text-sm">
+            &copy; 2026 Zika Sports Drink. Rendimiento real.
+        </div>
+    </div>
+</footer>
+
+<script src="funciones.js"></script>
 </body>
 </html>
