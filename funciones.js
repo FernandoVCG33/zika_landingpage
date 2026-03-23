@@ -35,4 +35,35 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    // Lógica del Formulario y Modal
+    const orderForm = document.getElementById('orderForm');
+    const successModal = document.getElementById('successModal');
+    const modalContent = document.getElementById('modalContent');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+
+    const openModal = () => {
+        successModal.classList.add('modal-active');
+        modalContent.classList.add('modal-content-active');
+    };
+
+    const closeModal = () => {
+        successModal.classList.remove('modal-active');
+        modalContent.classList.remove('modal-content-active');
+    };
+
+    orderForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        openModal();
+        orderForm.reset();
+    });
+
+    closeModalBtn.addEventListener('click', closeModal);
+
+    // Cerrar modal al hacer clic fuera del contenido
+    successModal.addEventListener('click', (e) => {
+        if (e.target === successModal) {
+            closeModal();
+        }
+    });
 });
